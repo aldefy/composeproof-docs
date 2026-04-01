@@ -13,7 +13,7 @@ export default defineConfig({
       ],
       customCss: ['./src/styles/custom.css'],
       sidebar: [
-        { label: 'Introduction', slug: 'intro' },
+        { label: 'Introduction', slug: '' },
         {
           label: 'Getting Started',
           items: [

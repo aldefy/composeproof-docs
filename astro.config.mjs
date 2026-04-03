@@ -12,6 +12,16 @@ export default defineConfig({
         { icon: 'x.com', label: 'X', href: 'https://x.com/AditLal' },
       ],
       customCss: ['./src/styles/custom.css'],
+      head: [
+        {
+          tag: 'script',
+          attrs: {
+            defer: true,
+            src: 'https://aditlal.dev/stats/script.js',
+            'data-website-id': '5a0d08a2-a550-421d-a218-28aa4912639d',
+          },
+        },
+      ],
       sidebar: [
         { label: 'Introduction', slug: '' },
         {

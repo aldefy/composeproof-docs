@@ -122,7 +122,7 @@ ComposeProof wraps ADB into MCP tools. Every interaction automatically captures 
 The deepest layer. Requires adding the agent SDK to your app (debug builds only).
 
 ```kotlin
-debugImplementation("dev.composeproof:composeproof-agent:1.1.0")
+debugImplementation("dev.composeproof:composeproof-agent:1.2.0")
 ```
 
 The agent SDK runs a local HTTP server inside your app process. ComposeProof's MCP server connects to it over ADB reverse TCP tunnel. This gives the AI direct access to live runtime state that ADB alone cannot reach.

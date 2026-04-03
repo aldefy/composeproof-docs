@@ -66,8 +66,8 @@ Purpose-built prompts, license gating, and the npm installer that makes ComposeP
 - **npm installer** — `npx composeproof` installs and starts the MCP server. Works on any Compose project with no build file changes.
 - **`compose-ui-workflow` skill** — A reusable MCP skill that guides AI assistants through a structured render → inspect → verify → fix loop.
 - **MCP `instructions` field** — Remote instructions delivered to the AI assistant at session start. Keeps AI behavior consistent without updating the JAR.
-- **6 expert prompts** — `spec-verifier`, `accessibility-checker`, `golden-recorder`, `regression-hunter`, `performance-profiler`, `design-token-auditor`. Invoke via your AI client.
-- **License gating** — Free tier (render, list, diff, preflight) and Pro tier (embedded agent, batch, insights, stability analysis). License validated at session start.
+- **6 expert prompts** — `accessibility-checker`, `compose-performance`, `kmp-architect`, `ui-reviewer`, `screenshot-test-writer`, `spec-verifier`. Invoke via your AI client.
+- **License gating** — Free tier (21 tools + 8 prompts) and Pro tier (+19 tools + 3 prompts). License validated at session start via signed JWT.
 
 ---
 
@@ -88,9 +88,30 @@ Additional capabilities in this wave:
 
 ---
 
+### Wave 6 — Code Intelligence & Pro Prompts (v1.2.0)
+
+AST-based code understanding powered by [Kartograph](https://github.com/aldefy/kartograph), plus an intelligence layer of expert prompts backed by [compose-skill](https://github.com/aldefy/compose-skill) and [compose-rebound](https://github.com/aldefy/compose-rebound).
+
+| Tool / Prompt | Tier | Description |
+|---------------|------|-------------|
+| `cp_index_project` | Pro | Index a project with tree-sitter AST parsing + local ONNX embeddings (768-dim). Git-aware incremental updates. |
+| `cp_semantic_search` | Pro | Hybrid search (vector cosine + BM25 keyword + RRF ranking) across the indexed codebase |
+| `compose-skill` | Free | Source-backed Compose best practices — 13 topic guides from actual `androidx` framework source |
+| `rebound-basics` | Free | Recomposition budget monitoring guide — setup, budget classes, violations, `@ReboundBudget` |
+| `stability-doctor` | Pro | Deep stability diagnosis combining Rebound data + framework knowledge for root-cause analysis |
+| `rebound-advisor` | Pro | Interprets budget violations with severity triage and targeted fixes |
+| `migration-assistant` | Pro | Source-backed deprecated pattern migration (accompanist → built-in APIs) with exact before/after code |
+
+Additional capabilities in this wave:
+- **Pro auto-index** — Pro users get automatic Kartograph indexing at server startup. `cp_semantic_search` is ready immediately.
+- **License gate for prompts** — Pro prompts gated alongside Pro tools. Free prompts available to all.
+- **Fixed tool gating** — All Pro tools now correctly gated with `cp_` prefix matching (previously broken).
+
+---
+
 ## Planned
 
-### Wave 6 — Multiplatform & CI
+### Wave 7 — Multiplatform & CI
 
 Extend rendering to Compose Multiplatform targets and integrate ComposeProof into standard CI workflows as a first-class tool.
 

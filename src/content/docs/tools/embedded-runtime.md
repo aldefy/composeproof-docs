@@ -5,7 +5,7 @@ title: Embedded Agent — Runtime
 Deep runtime introspection powered by an in-process agent library. These tools communicate directly with the running app over ADB — no reflection hacks, no logcat scraping.
 
 :::note[Dependency required]
-Add `debugImplementation("dev.composeproof:composeproof-agent:1.1.0")` to your app module's `build.gradle.kts` to enable these tools.
+Add `debugImplementation("dev.composeproof:composeproof-agent:1.2.0")` to your app module's `build.gradle.kts` to enable these tools.
 :::
 
 ---

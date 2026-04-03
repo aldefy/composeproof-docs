@@ -158,7 +158,7 @@ For teams that want golden management and CI integration, the optional Gradle pl
 ```kotlin
 // build.gradle.kts (module level)
 plugins {
-    id("dev.composeproof") version "1.1.0"
+    id("dev.composeproof") version "1.2.0"
 }
 ```
 

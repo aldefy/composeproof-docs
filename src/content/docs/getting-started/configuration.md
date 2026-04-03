@@ -92,7 +92,7 @@ composeproof status
 Output:
 
 ```
-ComposeProof v1.1.0
+ComposeProof v1.2.0
 License: Pro (activated)
 Linked: your-github-username
 ```

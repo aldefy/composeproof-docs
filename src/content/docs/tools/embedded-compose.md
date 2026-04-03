@@ -5,7 +5,7 @@ title: Embedded Agent — Compose Intelligence
 Live Compose introspection from inside the running process — semantics queries, state snapshots, recomposition tracking, stability analysis, and more.
 
 :::note[Dependency required]
-Add `debugImplementation("dev.composeproof:composeproof-agent:1.1.0")` to your app module's `build.gradle.kts` to enable these tools.
+Add `debugImplementation("dev.composeproof:composeproof-agent:1.2.0")` to your app module's `build.gradle.kts` to enable these tools.
 :::
 
 ---

@@ -45,6 +45,7 @@ export default defineConfig({
             { label: 'Embedded Agent — Runtime', slug: 'tools/embedded-runtime' },
             { label: 'Embedded Agent — Compose', slug: 'tools/embedded-compose' },
             { label: 'Testing & Mocking', slug: 'tools/testing-mocking' },
+            { label: 'Code Intelligence (Pro)', slug: 'tools/code-intelligence' },
             { label: 'Expert Prompts', slug: 'tools/expert-prompts' },
           ],
         },

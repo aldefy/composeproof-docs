@@ -4,7 +4,7 @@ title: First Render
 
 ## Prerequisites
 
-- ComposeProof installed (`composeproof --version` returns `ComposeProof v1.1.0`)
+- ComposeProof installed (`composeproof --version` returns `ComposeProof v1.2.0`)
 - A Compose project with at least one `@Preview`-annotated function
 - An MCP-enabled AI client configured (Claude Code, Gemini CLI, or Cursor)
 

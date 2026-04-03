@@ -22,7 +22,7 @@ The agent is debug-only. It adds zero code to your release builds.
 ```kotlin
 // app/build.gradle.kts
 dependencies {
-    debugImplementation("dev.composeproof:composeproof-agent:1.1.0")
+    debugImplementation("dev.composeproof:composeproof-agent:1.2.0")
 }
 ```
 

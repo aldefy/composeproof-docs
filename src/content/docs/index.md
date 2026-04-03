@@ -29,8 +29,8 @@ No device. No emulator. The AI IS the test engine — ComposeProof gives it eyes
 
 ## Key capabilities
 
-- **44 MCP tools** across headless rendering, device interaction, runtime inspection, testing, and mocking
-- **6 expert prompts** for accessibility, performance, KMP architecture, UI review, test generation, and spec verification
+- **40 MCP tools** across headless rendering, device interaction, runtime inspection, code intelligence, testing, and mocking
+- **11 expert prompts** (8 free + 3 Pro) for accessibility, performance, KMP architecture, UI review, Compose best practices, Rebound budgets, stability diagnosis, and migration
 - **Zero-install** — works on any Compose project without build file changes
 - **Headless rendering** via Compose Desktop (Skia) — no device, no emulator needed
 - **Golden management** — record, verify, and update visual baselines
@@ -57,16 +57,19 @@ No device. No emulator. No build file changes. The AI closes the feedback loop.
 
 ## What's inside
 
-| Category | Tools | Examples |
+| Category | Count | Examples |
 |----------|-------|---------|
 | Context & Orientation | 4 | `insights`, `get_context`, `configure_context`, `generate_report` |
 | Headless Rendering | 6 | `render`, `list_previews`, `verify`, `render_batch`, `diff` |
 | Device Interaction | 5 | `preflight`, `build_and_deploy`, `device_interact`, `take_screenshot` |
 | Device Inspection | 5 | `inspect_ui_tree`, `get_network_logs`, `get_recomposition_stats` |
 | Embedded Agent — Runtime | 7 | `inspect_permissions`, `inspect_navigation_graph`, `simulate_process_death` |
-| Embedded Agent — Compose | 9 | `semantic_ui_query`, `inspect_compose_state`, `track_recompositions` |
+| Embedded Agent — Compose | 5 | `semantic_ui_query`, `inspect_compose_state`, `track_recompositions` |
+| Embedded Agent — App Internals | 4 | `inspect_shared_preferences`, `inspect_viewmodel_state`, `inspect_network_logs` |
+| Code Intelligence (Pro) | 2 | `index_project`, `semantic_search` |
 | Testing & Mocking | 2 | `generate_edge_cases`, `mock_api` |
-| Expert Prompts | 6 | `accessibility-checker`, `compose-performance`, `ui-reviewer` |
+| Expert Prompts (Free) | 8 | `accessibility-checker`, `compose-skill`, `rebound-basics` |
+| Expert Prompts (Pro) | 3 | `stability-doctor`, `rebound-advisor`, `migration-assistant` |
 
 ## Next steps
 

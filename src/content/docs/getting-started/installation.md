@@ -63,7 +63,7 @@ composeproof --version
 Expected output:
 
 ```
-ComposeProof v1.1.0
+ComposeProof v1.2.0
 ```
 
 ---

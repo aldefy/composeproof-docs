@@ -1,19 +1,46 @@
+/* ComposeProof docs — Instrument theme (teal, Archivo + IBM Plex Mono).
+   Matches composeproof.dev. Starlight token overrides, light + dark. */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
 :root {
-  --sl-color-accent-low: #1a0f2e;
-  --sl-color-accent: #8b5cf6;
-  --sl-color-accent-high: #d8b4fe;
-  --sl-color-white: #ffffff;
-  --sl-color-gray-1: #eceef2;
-  --sl-color-gray-2: #c0c2c7;
-  --sl-color-gray-3: #888b96;
-  --sl-color-gray-4: #545861;
-  --sl-color-gray-5: #353841;
-  --sl-color-gray-6: #24272f;
-  --sl-color-black: #17181c;
+  --sl-font: 'Archivo', system-ui, sans-serif;
+  --sl-font-mono: 'IBM Plex Mono', 'JetBrains Mono', monospace;
+
+  /* DARK (default) — near-black + teal phosphor */
+  --sl-color-accent-low: #0a2e2b;
+  --sl-color-accent: #2DD4BF;
+  --sl-color-accent-high: #99f6e4;
+  --sl-color-white: #ECE9E1;
+  --sl-color-gray-1: #d7d3cb;
+  --sl-color-gray-2: #A9A49A;
+  --sl-color-gray-3: #6c6a63;
+  --sl-color-gray-4: #3a3d42;
+  --sl-color-gray-5: #1b1d21;
+  --sl-color-gray-6: #0e1013;
+  --sl-color-black: #070809;
 }
 
 :root[data-theme='light'] {
-  --sl-color-accent-low: #ede9fe;
-  --sl-color-accent: #7c3aed;
-  --sl-color-accent-high: #1a0f2e;
+  /* LIGHT — warm paper + darker teal */
+  --sl-color-accent-low: #ccf3ee;
+  --sl-color-accent: #0D8A80;
+  --sl-color-accent-high: #06413c;
+  --sl-color-white: #16130E;
+  --sl-color-gray-1: #2a261e;
+  --sl-color-gray-2: #4c473d;
+  --sl-color-gray-3: #6c6a63;
+  --sl-color-gray-4: #9a9488;
+  --sl-color-gray-5: #e4dfd3;
+  --sl-color-gray-6: #f1ece2;
+  --sl-color-black: #F7F4EC;
+}
+
+/* Uppercase mono site title to match the main site's instrument voice */
+.site-title span, a.site-title { font-family: var(--sl-font-mono); font-weight: 600; letter-spacing: -0.01em; }
+
+/* Inline code + code blocks: hairline border, teal-tinted */
+:not(pre) > code {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 4px;
 }

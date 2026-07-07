@@ -6,7 +6,7 @@ title: Introduction
 
 **ComposeProof is an MCP server that gives AI coding assistants eyes on Compose UI.** It provides headless rendering, embedded runtime inspection, golden management, spec-driven verification, device interaction, and expert analysis prompts.
 
-Works with **Claude Code**, **Gemini CLI**, **Cursor**, **Android Studio Agent Mode** — anything that speaks MCP.
+Works with **Claude Code**, **Antigravity**, **Cursor**, **Codex**, **Android Studio Agent Mode** — anything that speaks MCP.
 
 ## What it does
 
@@ -41,7 +41,7 @@ No device. No emulator. The AI IS the test engine — ComposeProof gives it eyes
 
 ## Who it's for
 
-- **Android/Compose developers** using AI coding assistants (Claude Code, Gemini CLI, Cursor) who want the AI to see and verify UI output
+- **Android/Compose developers** using AI coding assistants (Claude Code, Antigravity, Cursor, Codex) who want the AI to see and verify UI output
 - **Teams** wanting automated visual regression testing in CI/CD pipelines
 - **Solo developers** who need QA automation without hiring QA
 

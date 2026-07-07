@@ -48,7 +48,7 @@ The AI stops guessing and starts verifying.
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                         AI Client                               │
-│          (Claude Code, Gemini CLI, Cursor, etc.)                │
+│        (Claude Code, Antigravity, Cursor, Codex, etc.)          │
 └───────────────────────────┬─────────────────────────────────────┘
                             │  MCP (JSON-RPC 2.0 over STDIO)
                             ▼
@@ -186,7 +186,7 @@ ComposeProof is a standard MCP server. It speaks JSON-RPC 2.0 over STDIO — the
 }
 ```
 
-Any client that implements the MCP specification works with ComposeProof: Claude Code, Gemini CLI, Cursor, Continue.dev, or your own custom client.
+Any client that implements the MCP specification works with ComposeProof: Claude Code, Antigravity, Cursor, Codex, Continue.dev, or your own custom client.
 
 **MCP instructions field:** ComposeProof includes an `instructions` field in its MCP server manifest. This gives behavioral guidance to the AI client — telling it which tool to call for which intent, how to interpret results, and how to chain tools for common workflows. This is how the AI knows to call `cp_preflight` before `cp_build_and_deploy`, or to call `cp_insights` before exploring an unfamiliar project.
 

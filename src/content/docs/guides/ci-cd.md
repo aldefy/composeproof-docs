@@ -102,7 +102,7 @@ The report contains:
 
 ## With an AI agent
 
-Use Claude Code or Gemini CLI to orchestrate the full pipeline in one prompt:
+Use Claude Code, Antigravity, or Codex to orchestrate the full pipeline in one prompt:
 
 ```
 "run a full QA check on this PR: render everything, verify against goldens,
@@ -157,7 +157,7 @@ jobs:
 
       - name: Run visual verification
         run: |
-          # Claude Code or Gemini CLI runs the verification
+          # Claude Code, Antigravity, or Codex runs the verification
           # and outputs results as JSON
           composeproof verify --all --mode=verify --report=html
 
@@ -169,7 +169,7 @@ jobs:
 ```
 
 :::note[AI-orchestrated vs. direct CLI]
-The `composeproof verify` CLI command runs the same tool chain your AI would. You can also use `claude --mcp` or `gemini --mcp` to run the AI-orchestrated version, which gives richer analysis (the AI interprets results, not just counts pass/fail).
+The `composeproof verify` CLI command runs the same tool chain your AI would. You can also use `claude --mcp` or your Antigravity/Codex CLI's MCP flag to run the AI-orchestrated version, which gives richer analysis (the AI interprets results, not just counts pass/fail).
 :::
 
 ---

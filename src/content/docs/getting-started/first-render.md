@@ -6,7 +6,7 @@ title: First Render
 
 - ComposeProof installed (`composeproof --version` returns `ComposeProof v1.2.0`)
 - A Compose project with at least one `@Preview`-annotated function
-- An MCP-enabled AI client configured (Claude Code, Gemini CLI, or Cursor)
+- An MCP-enabled AI client configured (Claude Code, Antigravity, Cursor, or Codex)
 
 No device. No emulator. No Gradle plugin.
 

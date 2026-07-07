@@ -23,8 +23,8 @@ The installer runs a 7-step wizard:
 1. **Detect OS** — determines whether to create a shell wrapper (macOS/Linux) or `.cmd` file (Windows)
 2. **Check Java** — verifies Java 17+ is on PATH. Exits with instructions if not found.
 3. **Download JAR** — fetches the latest `composeproof.jar` from [aldefy/composeproof-releases](https://github.com/aldefy/composeproof-releases/releases) to `~/.composeproof/`
-4. **Create binary** — writes a `composeproof` launcher script to `~/.local/bin/` (or `%APPDATA%\composeproof\bin\` on Windows) and adds it to PATH
-5. **Detect AI clients** — scans for Claude Code, Gemini CLI, Cursor, and Android Studio on the machine
+4. **Create binary** — writes a `composeproof` launcher script (or `composeproof.cmd` on Windows) to `~/.composeproof/bin/` and symlinks to `/usr/local/bin/` (macOS/Linux) or adds to PATH (Windows)
+5. **Detect AI clients** — scans for Claude Code, Antigravity, Cursor, Codex, and Android Studio on the machine
 6. **Write MCP config** — for each detected client, writes or merges the `composeproof` server entry into the appropriate config file (global or per-project)
 7. **Verify** — runs `composeproof --version` to confirm the install
 

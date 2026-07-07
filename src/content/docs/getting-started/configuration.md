@@ -40,10 +40,10 @@ All clients use the same JSON structure. The key is `composeproof` inside `mcpSe
 }
 ```
 
-### Gemini CLI
+### Antigravity
 
 ```json
-// ~/.gemini/settings.json
+// ~/.gemini/config/mcp_config.json
 {
   "mcpServers": {
     "composeproof": {
@@ -52,6 +52,15 @@ All clients use the same JSON structure. The key is `composeproof` inside `mcpSe
     }
   }
 }
+```
+
+### Codex
+
+```toml
+# ~/.codex/config.toml
+[mcp_servers.composeproof]
+command = "composeproof"
+args = ["serve", "--stdio"]
 ```
 
 ### Cursor
